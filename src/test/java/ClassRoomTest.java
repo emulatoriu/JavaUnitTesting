@@ -22,9 +22,11 @@ public class ClassRoomTest {
 
         List<Integer> marks = Arrays.asList(1, 3, 4, 2, 1, 3, 2, 1);
 
-        assertTrue(cr.findClassAverageMarks(marks)<3);
+        assertTrue(cr.findClassAverageMarks(marks) < 3);
 
     }
+
+    //TODO: Write a function that checks if the average makrs equal a certain one
 
     @Test
     public void ClassRoomMock() {
