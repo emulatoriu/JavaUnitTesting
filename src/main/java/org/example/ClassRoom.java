@@ -16,7 +16,7 @@ public class ClassRoom {
 
     public double findClassAverageMarks(List<Integer> marks) {
 
-        return marks.stream().mapToDouble(a->a).average().getAsDouble();
+        return marks.stream().mapToDouble(mark->mark).average().getAsDouble();
     }
 
     public boolean findStudent(String studentName) {
