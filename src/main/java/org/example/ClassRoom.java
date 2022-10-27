@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.DoubleStream;
 
 public class ClassRoom {
     private ClassRoomService crs;
@@ -14,7 +15,8 @@ public class ClassRoom {
     }
 
     public double findClassAverageMarks(List<Integer> marks) {
-        return marks.stream().mapToDouble(marks::get).average().getAsDouble();
+
+        return marks.stream().mapToDouble(a->a).average().getAsDouble();
     }
 
     public boolean findStudent(String studentName) {
